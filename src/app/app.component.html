@@ -1,0 +1,30 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" [opened]="isSidenavOpened">
+    <mat-nav-list>
+      <a mat-list-item routerLink="page-1" routerLinkActive="mat-mdc-list-item-active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>home</mat-icon>
+        <p class="text">Моя страница</p>  
+      </a>
+      <a mat-list-item routerLink="page-2" routerLinkActive="mat-mdc-list-item-active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>mode_comment</mat-icon>
+        <p class="text">Сообщения</p>  
+      </a>
+      <a mat-list-item routerLink="page-3" routerLinkActive="mat-mdc-list-item-active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>mode_comment</mat-icon>
+        <p class="text">Сообщения</p>  
+      </a>
+      <a mat-list-item routerLink="page-4" routerLinkActive="mat-mdc-list-item-active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>mode_comment</mat-icon>
+        <p class="text">Сообщения</p>  
+      </a>
+      <a mat-list-item routerLink="page-5" routerLinkActive="mat-mdc-list-item-active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>mode_comment</mat-icon>
+        <p class="text">Сообщения</p>  
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
